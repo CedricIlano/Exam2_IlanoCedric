@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First name:"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/etFN"
+            android:layout_height="wrap_content"
+            android:hint="Enter First name"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/second"
+        android:layout_below="@id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name:"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etLN"
+            android:hint="Enter Last name"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/third"
+        android:layout_below="@id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exam 1:"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etExam1"
+            android:hint="Enter grade"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fourth"
+        android:layout_below="@id/third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exam 2:"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etExam2"
+            android:hint="Enter grade"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/fifth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fourth">
+
+
+        <TextView
+            android:id="@+id/textViewRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fourthRow"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/fifth">
+        <Button
+            android:id="@+id/firstButton"
+            android:layout_width="wrap_content"
+            android:text="DISPLAY AVERAGE"
+            android:onClick="moveFirst"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
